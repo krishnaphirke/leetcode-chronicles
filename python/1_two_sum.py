@@ -3,8 +3,8 @@ class Solution(object):
         hash = {}  # dictionary to store value:index mapping for quick lookup
         for i in range(len(nums)):  # iterate over each index in nums length of nums array
             x = target - nums[i]  # complement needed to reach the target
-            if x in hash:  # if complement already seen, return the pair of indices
-                return [hash[x], i]
+            if x in hash:  # if complement already seen then
+                return [hash[x], i] # return the pair of indices
             hash[nums[i]] = i  # store the current number with its index for future lookups
 
 ''' 
